@@ -50,7 +50,7 @@ class KhipuServiceCreatePaymentPage extends KhipuService {
    * @return string
    *   Formulario renderizado
    */
-  public function renderForm($button_type = '100x50') {
+  public function renderForm($button_type = '110x50') {
     $values = $this->getFormLabels();
     $html = new DOMDocument();
     $html->formatOutput = true;
