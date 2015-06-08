@@ -148,11 +148,11 @@ class Khipu
   public static function getButtonsKhipu() {
     $url = 'https://s3.amazonaws.com/static.khipu.com';
     return array(
-      '50x25'     => $url . '/2015/buttons/50x25-purple.png',
-      '110x25'    => $url . '/2015/buttons/110x25-transparent.png',
-      '110x50'    => $url . '/2015/buttons/110x50-transparent.png',
-      '150x50'    => $url . '/2015/buttons/150x50-transparent.png',
-      '200x75'    => $url . '/2015/buttons/200x75-transparent.png',
+      '50x25'     => $url . '/buttons/2015/50x25-purple.png',
+      '110x25'    => $url . '/buttons/2015/110x25-transparent.png',
+      '110x50'    => $url . '/buttons/2015/110x50-transparent.png',
+      '150x50'    => $url . '/buttons/2015/150x50-transparent.png',
+      '200x75'    => $url . '/buttons/2015/200x75-transparent.png',
     );
   }
 }
