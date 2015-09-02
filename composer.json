@@ -1,5 +1,5 @@
 {
-    "name": "freshworkstudio/khipu-lib-composer",
+    "name": "freshworkstudio/khipu",
     "description": "Composer package for Tifon's Khipu Library (https://github.com/khipu/lib-php)",
     "license": "MIT",
     "authors": [
