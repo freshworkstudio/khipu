@@ -1,5 +1,7 @@
 <?php
 
+namespace FreshworkStudio;
+
 /**
  * (c) Nicolas Moncada <nicolas.moncada@tifon.cl>
  *
@@ -11,6 +13,8 @@
 /**
  * Definimos la ruta de Khipu.
  */
+use Exception;
+
 define('KHIPU_ROOT', dirname(__FILE__) . '/');
 
 /**
@@ -70,14 +74,12 @@ class Khipu
    */
   public function loadService($service_name) {
     // Definimos el nombre de la clase completa del servicio.
-    $class = 'KhipuService' . $service_name;
+    $class = 'FreshworkStudio\KhipuService\KhipuService' . $service_name;
     // Asignamos la ruta del archivo que contiene la clase.
-    $filename = KHIPU_ROOT . 'KhipuService/' . $class . '.php';
 
     // Consultamos si existe el archivo.
-    if (file_exists($filename)) {
+    if (class_exists($class)) {
       // Si existe se llama.
-      require_once $filename;
 
       $services_name = self::getAllServicesName();
 

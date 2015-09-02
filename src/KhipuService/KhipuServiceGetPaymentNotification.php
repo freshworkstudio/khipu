@@ -1,13 +1,14 @@
 <?php
 
+namespace FreshworkStudio\KhipuService;
+
 /**
  * (c) Emilio Davis <emilio.davis@khipu.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
-require_once 'KhipuService.php';
+use FreshworkStudio\Khipu;
 
 /**
  * Servicio GetPaymentNotification extiende de KhipuService

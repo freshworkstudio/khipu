@@ -1,6 +1,8 @@
 <?php
 
-require_once '../src/Khipu.php';
+use FreshworkStudio\Khipu;
+
+require_once __DIR__ . '/../vendor/autoload.php';
 
 require_once 'settingsTest.php';
 
@@ -13,7 +15,6 @@ class KhipuTest extends PHPUnit_Framework_TestCase {
   }
 
   public function testAuthenticate() {
-
     $khipu = new KhipuToTest();
     $khipu->authenticate(KHIPU_TEST_RECEIVER_ID, KHIPU_TEST_SECRET);
     $this->assertEquals($khipu->getReceiverId(), KHIPU_TEST_RECEIVER_ID,

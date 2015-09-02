@@ -8,6 +8,11 @@ Biblioteca PHP para utilizar los servicios de Khipu.com
 
 La documentación de Khipu.com se puede ver desde aquí: https://khipu.com/page/api
 
+## Instalación: composer
+`composer require freshworkstudio/khipu`
+
+
+
 ## Introducción
 
 La API de Khipu cuenta con varios servicios, los cuales son:
@@ -35,7 +40,7 @@ A continuación un ejemplo
 ```php
 <?php
   // ...
-  require_once "Khipu.php";
+  require_once __DIR__ . '/../vendor/autoload.php';
   $khipu = new Khipu();
   // Para usar el servicio para crear cobros y enviarlos por Mail necesitamos
   // identificar al cobrador ya que es requerido para el servicio.
@@ -84,7 +89,7 @@ ejemplo:
 ```php
 <?php
   // ...
-  require_once "Khipu.php";
+  require_once __DIR__ . '/../vendor/autoload.php';
 
   $Khipu = new Khipu();
   $Khipu->authenticate($receiver_id, $llave);
@@ -126,7 +131,7 @@ A continuación un ejemplo:
 ```php
 <?php
   // ...
-  require_once "Khipu.php";
+  require_once __DIR__ . '/../vendor/autoload.php';
 
   $Khipu = new Khipu();
   // No necesitamos identificar al cobrador para usar este servicio.
@@ -171,7 +176,7 @@ A continuación un ejemplo:
 ```php
 <?php
   // ...
-  require_once "Khipu.php";
+  require_once __DIR__ . '/../vendor/autoload.php';
   $Khipu = new Khipu();
   $Khipu->authenticate($receiver_id, $llave);
   $khipu_service = $Khipu->loadService('ReceiverStatus');
@@ -191,7 +196,7 @@ La clase Khipu cuenta con dos funciones estáticas, las cuales son:
 ```php
 <?php
   // ...
-  require_once "Khipu.php";
+  require_once __DIR__ . '/../vendor/autoload.php';
 
   // Imprime https://khipu.com/api/1.3/verifyPaymentNotification
   echo Khipu::getUrlService('VerifyPaymentNotification');
@@ -204,10 +209,14 @@ corresponde.
 ```php
 <?php
   // ...
-  require_once "Khipu.php";
+  require_once __DIR__ . '/../vendor/autoload.php';
 
   $buttons = Khipu::getButtonsKhipu();
 ?>
 ```
 Esta función retorna la lista de links de los botones de Khipu.com, la pueden ver
 aquí: https://khipu.com/page/botones-de-pago
+
+
+## Testing
+`phpunit src/KhipuTest.php`
