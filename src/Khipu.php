@@ -3,7 +3,7 @@
 namespace FreshworkStudio;
 
 /**
- * (c) Nicolas Moncada <nicolas.moncada@tifon.cl>
+ * (c) Nicolas Moncada <nicolas.moncada@tifon.cl> y Gonzalo De Spirito <gonzalo@freshworkstudio.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -156,5 +156,14 @@ class Khipu
       '150x50'    => $url . '/buttons/2015/150x50-transparent.png',
       '200x75'    => $url . '/buttons/2015/200x75-transparent.png',
     );
+  }
+
+  /**
+   * Funcion que permite cargar los servicios como si fuesen propiedades. Ej: $khipu->ReceiverBanks->consult()
+   *
+   */
+  public function __get($resource)
+  {
+    return $this->loadService($resource);
   }
 }
