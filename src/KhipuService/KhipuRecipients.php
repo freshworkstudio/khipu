@@ -1,6 +1,6 @@
 <?php
 
-namespace FreshworkStudio\KhipuService;
+namespace FreshworkStudio\Khipu\KhipuService;
 
 /**
  * (c) Nicolas Moncada <nicolas.moncada@tifon.cl>

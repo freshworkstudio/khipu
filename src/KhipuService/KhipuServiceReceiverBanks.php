@@ -1,6 +1,6 @@
 <?php
 
-namespace FreshworkStudio\KhipuService;
+namespace FreshworkStudio\Khipu\KhipuService;
 
 /**
  * (c) Nicolas Moncada <nicolas.moncada@tifon.cl>
@@ -9,7 +9,7 @@ namespace FreshworkStudio\KhipuService;
  * file that was distributed with this source code.
  */
 
-use FreshworkStudio\Khipu;
+use FreshworkStudio\Khipu\Khipu;
 
 /**
  * Servicio ReceiverBanks extiende de KhipuService

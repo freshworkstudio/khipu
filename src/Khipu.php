@@ -1,6 +1,6 @@
 <?php
 
-namespace FreshworkStudio;
+namespace FreshworkStudio\Khipu;
 
 /**
  * (c) Nicolas Moncada <nicolas.moncada@tifon.cl> y Gonzalo De Spirito <gonzalo@freshworkstudio.com>
@@ -74,7 +74,7 @@ class Khipu
    */
   public function loadService($service_name) {
     // Definimos el nombre de la clase completa del servicio.
-    $class = 'FreshworkStudio\KhipuService\KhipuService' . $service_name;
+    $class = 'FreshworkStudio\Khipu\KhipuService\KhipuService' . $service_name;
     // Asignamos la ruta del archivo que contiene la clase.
 
     // Consultamos si existe el archivo.

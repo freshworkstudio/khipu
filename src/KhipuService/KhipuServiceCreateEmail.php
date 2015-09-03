@@ -1,6 +1,6 @@
 <?php
 
-namespace FreshworkStudio\KhipuService;
+namespace FreshworkStudio\Khipu\KhipuService;
 
 /**
  * (c) Nicolas Moncada <nicolas.moncada@tifon.cl>
@@ -8,7 +8,7 @@ namespace FreshworkStudio\KhipuService;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-use FreshworkStudio\Khipu;
+use FreshworkStudio\Khipu\Khipu;
 
 /**
  * Servicio CreateEmail que extiende de KhipuService.
